@@ -1,0 +1,6 @@
+1. printing all the subarray + substring: n(n+1)/2
+2. counting the total number of subarrays
+3. counting the number of subarray at a perticular length k: n-k+1
+4. from any given index(i) or character the number of substring will be: n-i
+5. finding the largest palindromic substring count
+6. printing all the subarray and its sum.

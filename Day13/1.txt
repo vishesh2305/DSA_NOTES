@@ -1,0 +1,14 @@
+Defination:
+
+-- Searching is the process of finding the position (index) of a particular element (called the target) in a given
+array or list.
+
+Types of Searching:
+
+-- We can search for an element in an array using 3 common techniques:
+
+1. Linear Search
+
+2. Binary Search (Only for sorted arrays)
+
+3. Hashing-based Search (Using hash tables/maps)
