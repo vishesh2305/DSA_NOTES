@@ -8,7 +8,7 @@ int foundel(vector<int> arr, int target)
     int high = n - 1;
     while (low <= high)
     {
-        int mid = (low + high) / 2;
+        int mid = low + (high-low) / 2;   // This removes the issue of integer overflow if n is large. 
 
         if (arr[mid] == target)
         {

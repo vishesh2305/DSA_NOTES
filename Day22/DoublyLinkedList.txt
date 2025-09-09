@@ -1,0 +1,47 @@
+In Doubly Linked List the head prev is NULL and Also the Tail Next is NULL . 
+
+In this the Node is Linked to the previous element as well as to the next element.
+
+
+Doubly Linked List:
+
+-- A Doubly Linked List (DLL) is a linear data structure where each node contains:
+
+1. Data (value of the node)
+
+2. Next pointer (points to the next node)
+
+3. Previous pointer (points to the previous node)
+
+-- Unlike a Singly Linked List, a DLL allows traversal both forward and backward, making it more flexible but slightly heavier
+(extra memory for the prev pointer).
+
+Analogy:
+
+-- Think of a doubly linked list like a two-way railway track where:
+
+-- Each coach (node) is connected to the next and the previous coach.
+
+-- You can move forward or backward easily.
+
+-- If you want to detach or add a coach, you can adjust the connections from both sides.
+
+-- In contrast, a singly linked list is like a one-way track - you can only move forward.
+
+
+
+
+Example:
+
+NULL <- [Prev | Data | Next] <- > [Prev | Data | Next] <- > [Prev | Data | Next] -> NULL
+
+Advantages of DLL over SLL:
+
+1. Can be traversed in both directions.
+2. Deletion is easier because prev is available.
+3. Insertion at both ends is efficient.
+
+Disadvantages of DLL:
+
+1. Requires extra memory for prev pointer.
+2. More complex implementation compared to SLL.

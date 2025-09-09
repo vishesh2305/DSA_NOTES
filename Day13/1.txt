@@ -12,3 +12,19 @@ Types of Searching:
 2. Binary Search (Only for sorted arrays)
 
 3. Hashing-based Search (Using hash tables/maps)
+
+
+
+
+
+
+2. Binary Search
+
+Logic:
+
+-- Binary Search is used on sorted arrays (ascending or descending).
+-- It works by repeatedly dividing the search range in half.
+-- the time complexity of the binary search will be less than 0(n) ?
+
+Note: the binary search algorithm is based on divide and conquer strategy.
+

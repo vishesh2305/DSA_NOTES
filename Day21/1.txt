@@ -1,0 +1,11 @@
+Cycle in LinkedList:
+
+-- A cycle (loop) in a linked list occurs when a node's next pointer points back to a previous node instead of NULL or next node.
+
+-- This creates an infinite loop because traversal will never reach NULL.
+
+-- If a cycle exists, the concept of a single tail breaks down.
+
+-- We can't say tail->next = NULL directly, because we don't know where the cycle starts and which node to call "tail."
+
+

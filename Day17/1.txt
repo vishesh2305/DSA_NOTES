@@ -1,0 +1,85 @@
+LinkedList:
+===========
+
+A Linked List is a linear data structure where elements (called nodes) are not stored in contgous memory like arrays.
+
+Each node contains:
+
+1. Data 
+2. Pointer (or refrence) to the next node.
+Unlike arrays, linked lists do not have fixed size and do not require elements to be stored next to each other in memory. 
+
+
+
+Basic Node Structure:
+=====================
+
+structure based Node:
+---------------------
+
+
+struct Node{
+    int data;
+    Node* next;
+};
+
+
+
+class based Node:
+-----------------
+
+class Node{
+    public:
+    int data;
+    Node* next;
+
+    // constructor
+
+    Node(int data) {
+        this -> data  = data;
+        this -> next = NULL;
+    }
+};
+
+
+
+Types of Linked Lists:
+====================
+
+1. Singly Linked List:
+-- Each node has data + pointer to next node.
+--One-directional.
+
+Example:
+A -> B -> C -> NULL
+
+2. DOubly Linked List:
+--Each node has:
+
+a. Data
+b. Pointer to next
+c. Pointer to previous
+--Two-directional
+
+Example:
+NULL <- A -><- B -><- C -> NULL
+
+3. Circular Linked List:
+
+--Last node points back to the first node
+-- Can be singly or doubly circular 
+
+Example:
+A -> B -> C
+  <-   <-
+
+
+
+Characteristics of Linked Lists:
+--------------------------------
+
+1. Dynamic size: Can grow/ shrink at runtime 
+2. Efficient insertions/deletions: Especially at beginning/middle
+3. No direct access: Must traverse from head to find a node
+4. Memory-efficient: Allocated memory as needed
+5. Useful for implementing stack, ques
