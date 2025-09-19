@@ -11,6 +11,15 @@
         "xlocmon": "cpp",
         "xtr1common": "cpp",
         "xlocale": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "iterator": "cpp",
+        "xhash": "cpp",
+        "xmemory": "cpp",
+        "xtree": "cpp",
+        "array": "cpp",
+        "list": "cpp",
+        "xlocinfo": "cpp",
+        "stack": "cpp",
+        "set": "cpp"
     }
 }

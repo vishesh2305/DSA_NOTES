@@ -1,0 +1,46 @@
+Stack Data Structure:
+
+Google Docs Notes: https://docs.google.com/document/d/1v6gjLzfdj6mVfIcaElyNTFigKlkIk_1efUiiqwGm9rU/edit?tab=t.co1forjufin8
+
+Stack Data structure:
+
+-- A Stack is a linear data structure that follows LIFO (Last In First Out) principle.
+
+-- The element inserted last is removed first.
+
+Use cases:
+
+1. We can use stack to implement undo feature.
+
+2. To build navigation (forward/backword)
+
+3. Build compilers (ex :- syntax checking)
+
+4. Evaluate mathmatic expression (ex :- 1+2*3)
+
+5. Function Call Stack (used in recursion & program execution)
+
+Example:
+
+-- Stacks of plates (we can only view or remove the top plate).
+-- If we want to get bottom plate then we need to remove all plates one by
+by one. (LIFO)
+
+
+
+
+
+Implementation:
+
+Internally, we can implement Stack in C++ using:
+
+1. Arrays/vector
+
+2. Linked List
+
+It's basically a wrapper around arrays/LL with special access rules.
+
+3. STL stack (wrapper around deque/vector/list)
+
+
+

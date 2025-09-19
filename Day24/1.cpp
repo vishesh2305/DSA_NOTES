@@ -92,6 +92,57 @@ public:
         tail = current;
         tail->next = head;
     }
+
+    void insertatindex(int index, int value)
+    {
+        if (index >= size || index < 0)
+            cout << "Invalid index";
+        return;
+
+        Node *current = head;
+
+        Node *newnode = new Node(value);
+
+        int i = 0;
+        while (i < index - 1)
+        {
+            current = current->next;
+            i++;
+        }
+        newnode->next = current->next;
+        current->next = newnode;
+
+        size++;
+    }
+
+    void deleteatindex(int index)
+    {
+        if (index >= size || index < 0)
+        {
+            cout << "Invalid index";
+            return;
+        }
+
+        else if (index == 0)
+        {
+            deleteatfront();
+        }
+        else if (index == size - 1)
+            deleteatEnd();
+        else
+        {
+            Node *current = head;
+            int i = 0;
+            while (i < index - 1)
+            {
+                current = current->next;
+                i++;
+            }
+            Node *temp = current->next;
+            current->next = temp->next;
+            delete temp;
+        }
+    }
 };
 
 int main()
@@ -105,9 +156,12 @@ int main()
     l1.insertatfist(60);
     l1.display();
     cout << endl;
-    l1.deleteatfront();
-    l1.display();
-    cout << endl;
-    l1.deleteatEnd();
+    // l1.deleteatfront();
+    // l1.display();
+    // cout << endl;
+    // l1.deleteatEnd();
+    // l1.display();
+    // cout << endl;
+    l1.deleteatindex(2);
     l1.display();
 }
