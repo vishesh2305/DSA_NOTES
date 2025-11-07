@@ -107,8 +107,6 @@ class DoubleLinkedList{
 
 
     void deleteAtEnd(){
-        Node* temp = tail;
-
         if(head==NULL) return;
 
         if(head== tail){
@@ -118,7 +116,6 @@ class DoubleLinkedList{
         tail = tail->prev;
         tail->next = NULL;
     }
-    delete temp;
     size--;
     }
 

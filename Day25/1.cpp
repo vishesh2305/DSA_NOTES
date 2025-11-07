@@ -101,7 +101,7 @@ public:
     void deleteAtEnd(){
         Node* temp=tail;
         Node* curr=head;
-        while(curr!=tail){
+        while(curr->next !=tail){
             curr=curr->next;
         }
         if(head==NULL){
@@ -113,39 +113,13 @@ public:
             return ;
         }
         else{
-            tail=curr->next;
-            tail->next=head;
-            temp->next=NULL; 
-            delete temp;
+            curr->next = head;
+            delete tail;
+            tail = curr;
         }
         size--;
     }
-    // void deleteAtEnd() {
-    // if (head == NULL) {
-    //     cout << "CLL khali hai";
-    //     return;
-    // }
-// 
-//     // Only one node
-//     if (head->next == head) {
-//         delete head;
-//         head = tail = NULL;
-//         size--;
-//         return;
-//     }
 
-//     // More than one node
-//     Node* curr = head;
-//     while (curr->next != tail) {  
-//         curr = curr->next;        // find node before tail
-//     }
-
-//     // curr is previous of tail
-//     curr->next = head;  // link last second node to head
-//     delete tail;        // free last node
-//     tail = curr;        // update tail
-//     size--;
-// }
 
 void deleteAtPostion(int index) {
     if (head == NULL) {

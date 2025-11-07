@@ -20,6 +20,11 @@
         "list": "cpp",
         "xlocinfo": "cpp",
         "stack": "cpp",
-        "set": "cpp"
-    }
+        "set": "cpp",
+        "deque": "cpp",
+        "queue": "cpp",
+        "iostream": "cpp"
+    },
+    "workbench.settings.showAISearchToggle": false,
+    "editor.screenReaderAnnounceInlineSuggestion": false
 }

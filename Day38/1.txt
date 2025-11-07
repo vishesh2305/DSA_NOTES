@@ -1,0 +1,18 @@
+BST --> Binary Search Tree
+
+AVL --> Adelson-Velsky 
+
+
+
+
+RIGHT ROATION (FOR LL CASE):
+
+When do we use it ? 
+
+The tree is left-heavy(balance factor > 1)
+
+Specifically, left-left (LL) case, meaning the new node was inserted in the left subtree of the left child.
+
+
+Imagine this tree before roation:
+
